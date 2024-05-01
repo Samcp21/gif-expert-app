@@ -8,7 +8,7 @@ export const GifExpertApp = () => {
       category.toLowerCase()
     );
     if (lowerCaseCategories.includes(newCategory.toLowerCase())) return;
-    setCategories([...categories, newCategory]);
+    setCategories([newCategory, ...categories]);
   };
   return (
     <>
